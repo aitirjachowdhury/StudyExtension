@@ -10,5 +10,12 @@
         "scripts": ["background.js"]
       },
       "permissions": [
-        "tabs"]
-  }
+        "tabs"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.facebook.com/"],
+        "js": ["content.js"]
+      }
+    ]
+
+}
