@@ -26,6 +26,7 @@
     $('#sw-rst').click(function(){
         $('#sw-go').find('i').removeClass('fa-pause').addClass('fa-play')
     });
+    var resting = 1;
 
     var sw = {
         etime: null,
@@ -43,7 +44,6 @@
             sw.ego.addEventListener("click", sw.start);
             sw.ego.disabled = false;
         },
-
         tick: function(){
             sw.now++;
             var remain = sw.now;
@@ -53,9 +53,13 @@
             remain -= mins * 60;
             var secs = remain;
 
-            if(hours < 10) {hours = "0" + hours;}
-            if(mins < 10) {mins = "0" + mins;}
-            if(secs < 10) {secs = "0" + secs;}
+            if(hours < 10) {
+                if(hours == resting){alert("You have been productive for an hour! Pause the timer and reward yourself!"); resting++;}
+                hours = "0" + hours;
+            }
+            if(mins < 10) {
+                mins = "0" + mins;}
+            if(secs < 10) {secs = "0" + secs; }
             sw.etime.innerHTML = hours + ":" + mins + ":" + secs;
         },
 
