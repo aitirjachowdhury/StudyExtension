@@ -10,6 +10,7 @@
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <audio id="xyz" src="notif.mp3" preload="auto"></audio>
     <div id="stopwatch">
         <div id="sw-time">00:00:00</div>
         <div class="controls">
@@ -54,11 +55,13 @@
             var secs = remain;
 
             if(hours < 10) {
-                if(hours == resting){alert("You have been productive for an hour! Pause the timer and reward yourself!"); resting++;}
+                if(hours == resting){    
+                    document.getElementById('xyz').play();
+                    alert("You have been productive for an hour! Pause the timer and reward yourself!"); 
+                    resting++;}
                 hours = "0" + hours;
             }
-            if(mins < 10) {
-                mins = "0" + mins;}
+            if(mins < 10) {mins = "0" + mins;}
             if(secs < 10) {secs = "0" + secs; }
             sw.etime.innerHTML = hours + ":" + mins + ":" + secs;
         },
