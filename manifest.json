@@ -4,7 +4,8 @@
     "version": "1.0",
     "manifest_version": 2,
       "browser_action": {
-        "default_icon": "RU_icon.png"
+        "default_icon": "RU_icon.png",
+        "default_popup": "popup.html"
       },
       "background": {
         "scripts": ["background.js"]
