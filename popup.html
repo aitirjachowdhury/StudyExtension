@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            height: 250px;
+            width: 200px;
+        }
+
+        div#bgcolor {
+            height: 150px;
+            width: 200px;
+            background: #f4d4c9;
+        }
+
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        div#heading {
+            position: fixed;
+            left: 75px;
+            top: 7px;
+            font-size: 22px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            color: #333;
+        }
+
+        div#stopwatch {
+            border-radius: 12px;
+            padding: 2%;
+            border: 0;
+            background: #f4d4c9;
+            box-shadow: 5px 5px 10px #cfb4ab, -5px -5px 10px #fff4e7;
+            box-sizing: border-box;
+            width: 100px;
+            height: 35px;
+            text-align: center;
+        }
+
+        div#sw-time {
+            margin: 0 auto;
+            background: #f4d4c9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 3px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            vertical-align: middle;
+            color: #333;
+        }
+
+        button#sw-rst, button#sw-go {
+            margin: 30px 0px 10px;
+            width: 40px;
+            height: 20px;
+            border-radius: 12px;
+            border: 0;
+            background: #f4d4c9;
+            box-shadow: 5px 5px 10px #cfb4ab, -5px -5px 10px #fff4e7;
+            color: #615e5e;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button#sw-rst:focus, button#sw-go:focus {
+            outline: none;
+        }
+
+        button#sw-rst:hover, button#sw-go:hover {
+            color: #fff;
+        }
+
+        .fa {
+            margin: 3px 0px 10px;
+            font-size: 10px;
+            vertical-align: middle;
+        }
+
+        a.animated-button.thar-three {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            color: #333;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+            position: relative;
+            border: 2px solid #f4d4c9;
+            background-color: #f4d4c9;
+            transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+            0s;
+        }
+
+            a.animated-button.thar-three:hover {
+                color: #ffffff;
+                background-color: transparent;
+                text-shadow: nthree;
+            }
+
+                a.animated-button.thar-three:hover:before {
+                    left: 0%;
+                    right: auto;
+                    width: 100%;
+                }
+
+            a.animated-button.thar-three:before {
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                height: 100%;
+                width: 0px;
+                z-index: -1;
+                content: '';
+                color: #f4d4c9;
+                background: #333;
+                border: 2px solid #333;
+                transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+                0s;
+            }
+
+        div#coin {
+            position: fixed;
+            left: 100px;
+            top: 163px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            color: #333;
+        }
+
+        img#coin {
+            position: fixed;
+            left: 70px;
+            top: 165px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Quicksand';
+            color: #333;
+        }
+
+    </style>
+    <title>Eden</title>
+</head>
+<body id="topbody">
+    <div id="bgcolor">
+        <div id="heading">Eden</div>
+        <img src="RU_icon.png" alt="icon_pic" width="50" height="50">
+        <div class="center" id="stopwatch">
+            <div id="sw-time">00:00:00</div>
+            <div class="controls">
+                <button id="sw-rst" value="Reset"><i class="fa fa-stop fa-0x"></i></button>
+                <button id="sw-go" value="Reset"><i class="fa fa-play"></i></button>
+            </div>
+        </div>
+    </div>
+    <br>
+ 
+    <div>
+        <img id="coin" src="coin.png" alt="icon_pic" width="20" height="20">
+        <div id="coin">260</div>
+    </div>
+    <br>
+    <div> <a href="index.html" target="_blank" class="btn btn-sm animated-button thar-three">Settings</a> </div>
+</body>
+
+<script src="jquery-3.6.0.js"></script>
+<script src="stopwatch.js"></script>
+</html>
