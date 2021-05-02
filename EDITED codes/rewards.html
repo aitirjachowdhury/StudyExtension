@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Eden</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sidenav">
+      <br><br>
+      <div class="option">
+          <a href="index.html" style="font-size: 50px;">Eden</a>
+          <a class="active" href="rewards.html">Rewards</a>
+          <a href="about.html">About Us</a>
+          <a href="cart.html">Shopping Cart</a>
+          <a href="contact.html">Contact Us</a>
+      </div>
+  </div>
+<!--
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="locSelector">
+      <form id="distance_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <input type="hidden" name="price" id="price">
+        <input type="hidden" name="distance" id="distance">
+        <input type="hidden" name="carids" id="carids">
+        <input type="hidden" name="cars" id="cartype">
+        <div class="address">
+          <p>Source: </p>
+          <input type="text" style="width: 90%;" id="srcaddr" name="srcaddr" placeholder="Enter Address" required>
+        </div>
+
+       <div class="address">
+        <p>Destination: </p>
+        <input type="text" style="width: 90%;" id="destaddr" name="destaddr" placeholder="Enter Address" required>         </div>
+
+        <div style="width: 10%;padding-left: 20px; padding-top: 25px; float:left">
+          <button type="submit" style = "width: 100%; padding: 7px;" id="set">Set</button>
+        </div>
+      <div id="map"></div>
+      <p>Pick-up Time:</p>
+      <input type="time" style="margin-bottom: 10px;" name="time" required>
+      <br>
+      <button type="submit" style="margin-bottom: 20px;" name="order">Order</button>
+        </form>
+
+    </div>
+    </div>
+    
+  </div>
+-->
+<div class="main">
+    <div class="content">
+      <br><br><h1 class="title">Redeem Your Prize!</h1>
+      <div class="underline"></div>
+      <div class="small-container">
+          <div class="row">
+            <div class="col-4">
+                <h2>Carrot Cursor</h2>
+                <img src="imgs/carrot.png">
+                <p>Price: 50 points </p>
+                <button type="button" onclick="openBox()">Select</button>
+            </div>
+            <div class="col-4">
+                <h2>Plant Cursor</h2>
+                <img src="imgs/plant.png">
+                <p>Price: 100 points </p>
+                <button type="button" onclick="openBox()">Select</button>
+            </div>
+            <div class="col-4">
+                <h2>Ghost Yard</h2>
+                <img src="imgs/ghost.png">
+                <p><strong>About:</strong><br>A unique prize for the ones that have worked hard to get to their goal. Reward yourself with this 3D printed Baby Yoda.</p>
+                <h4><strong>Price:</strong> 200 points </h4>
+                <button type="button" onclick="openBox()">Select</button>
+            </div>
+            <div class="col-4">
+                <h2>Unicorn Island (Desktop)</h2>
+                <img src="imgs/unicorn.png">
+                <p><strong>About:</strong><br>Give yourself a companion that you can take care of, for your Desktop! </p>
+                <p><strong>Developers: </strong><a href="https://voidfishing.itch.io/my-pet-ghost">Link</a></p>
+                <h4><strong>Price:</strong> 200 points </h4>
+                <button type="button" onclick="openBox()">Select</button>
+            </div>
+            <div class="col-4">
+                <h2>Desk Baby Yoda Model</h2>
+                <img src="imgs/yoda.png">
+                <p><strong>About:</strong><br>A unique prize for the ones that have worked hard to get to their goal. Reward yourself with this 3D printed Baby Yoda.</p>
+                <h4><strong>Price:</strong> 1000 points </h4>
+                <button type="button" onclick="openBox()">Select</button>
+            </div>
+            <div class="col-4">
+                <h2>Desk Baby Groot Model</h2>
+                <img src="imgs/groot.png">
+                <p><strong>About:</strong><br>A unique prize for the ones that have worked hard to get to their goal. Reward yourself with this 3D printed Baby Groot.</p>
+                <h4><strong>Price:</strong> 1000 points </h4>
+                <button type="button" onclick="openBox()">Select</button>
+            </div>
+        </div>
+        </div>
+      </div>
+      </div>
+<!--
+      <script src="modal.js">
+      </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx5lbrMhv8DOYOGxWQavDHU0ZmBT2P-g8&callback=initMap"></script>
+-->
+  </body>
+</html>
