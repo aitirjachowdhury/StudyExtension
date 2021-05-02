@@ -15,73 +15,43 @@
       <div class="option">
           <a href="index.html" style="font-size: 50px;">Eden</a>
           <a class="active" href="rewards.html">Rewards</a>
-          <a href="about.html">About Us</a>
           <a href="cart.html">Shopping Cart</a>
           <a href="contact.html">Contact Us</a>
+          <a href="about.html">About Us</a>
       </div>
   </div>
 
-  <div id="myModal" class="modal">
-
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div class="locSelector">
-      <form id="distance_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <input type="hidden" name="price" id="price">
-        <input type="hidden" name="distance" id="distance">
-        <input type="hidden" name="carids" id="carids">
-        <input type="hidden" name="cars" id="cartype">
-        <div class="address">
-          <p>Source: </p>
-          <input type="text" style="width: 90%;" id="srcaddr" name="srcaddr" placeholder="Enter Address" required>
-        </div>
-
-       <div class="address">
-        <p>Destination: </p>
-        <input type="text" style="width: 90%;" id="destaddr" name="destaddr" placeholder="Enter Address" required>         </div>
-
-        <div style="width: 10%;padding-left: 20px; padding-top: 25px; float:left">
-          <button type="submit" style = "width: 100%; padding: 7px;" id="set">Set</button>
-        </div>
-      <div id="map"></div>
-      <p>Pick-up Time:</p>
-      <input type="time" style="margin-bottom: 10px;" name="time" required>
-      <br>
-      <button type="submit" style="margin-bottom: 20px;" name="order">Order</button>
-        </form>
-
-    </div>
-    </div>
-  </div>
-
+  <div>
+    
     <div class="content">
-      <br><br><br><h1 class="title">Redeem Your Prize!</h1>
-      <div class="underline"></div>
+      <h1 class="title" style="padding-left: 35%;">Redeem Your Prize!</h1>
         <div class="small-container">
-          <div class="row">
+          <div class="row-3">
             <div class="col-4">
-                <h2>Carrot Cursor</h2>
-                <img src="imgs/carrot.png">
-                <p>Price: 50 points </p>
+                <h2>Key Cursor</h2>
+                <img src="imgs/key.png">
+                <p><strong>About:</strong><br>Perseverence is key! You deserve this cursor for your diligent work. Redeem this with your saved points.</p>
+                <h4><strong>Price:</strong> 50 points </h4>
                 <button type="button" onclick="openBox()">Select</button>
             </div>
             <div class="col-4">
                 <h2>Plant Cursor</h2>
-                <img src="imgs/plant.png">
-                <p>Price: 100 points </p>
+                <img src="imgs/plant.png" style="height: -50px;">
+                <p><strong>About:</strong><br>Grow your collection even more with this Plant Cursor! Redeem this with your saved points.</p>
+                <h4><strong>Price:</strong> 100 points </h4>
                 <button type="button" onclick="openBox()">Select</button>
             </div>
             <div class="col-4">
-                <h2>Ghost Yard</h2>
+                <h2>Ghost Yard (Desktop)</h2>
                 <img src="imgs/ghost.png">
-                <p><strong>About:</strong><br>A unique prize for the ones that have worked hard to get to their goal. Reward yourself with this 3D printed Baby Yoda.</p>
+                <p><strong>About:</strong><br>Boo! Don't be scared of your new friend. Buy this desktop companion to reward your self for your hardwork</p>
                 <h4><strong>Price:</strong> 200 points </h4>
                 <button type="button" onclick="openBox()">Select</button>
             </div>
             <div class="col-4">
                 <h2>Unicorn Island (Desktop)</h2>
                 <img src="imgs/unicorn.png">
-                <p><strong>About:</strong><br>Give yourself a companion that you can take care of, for your Desktop! </p>
+                <p><strong>About:</strong><br>A new home for the unicorns! Give yourself a companion that you can take care of, for your Desktop! </p>
                 <p><strong>Developers: </strong><a href="https://voidfishing.itch.io/my-pet-ghost">Link</a></p>
                 <h4><strong>Price:</strong> 200 points </h4>
                 <button type="button" onclick="openBox()">Select</button>
@@ -103,6 +73,7 @@
           </div>
         </div>
       </div>
+    </div>
 
       <script src="modal.js">
       </script>
